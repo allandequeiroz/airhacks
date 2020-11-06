@@ -40,9 +40,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.rest-assured</groupId>
-      <artifactId>rest-assured</artifactId>
-      <scope>test</scope>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-rest-client</artifactId>
     </dependency>
   </dependencies>
   <build>
