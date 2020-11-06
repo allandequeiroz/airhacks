@@ -19,7 +19,7 @@ public class HelloResource {
     @GET
     @Counted
     @Bulkhead(3)
-    @Fallback(fallbackMethod = "overload")
+    //@Fallback(fallbackMethod = "overload")
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
         try {
@@ -27,6 +27,7 @@ public class HelloResource {
         } catch (InterruptedException e) {
         }
         LOG.info("called");
+        //throw new TooEarlyException("good morning from ukraine");
         return "hello";
     }
     
